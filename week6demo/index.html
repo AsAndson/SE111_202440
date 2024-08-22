@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ace Anderson">
+    <meta name="description" content="Week 6 JS Intro Demo">
+
+    <title>W6 | JS Intro</title>
+</head>
+<body>
+    <!--Include some bit of HTML elements when first getting started-->
+    <h1>Week 6 intro Demo | Javascript</h1>
+    <!--In-Doc JS Element at END of HTML content, before the body close-->
+    <script>
+        //Single Line comment in JS
+
+        //create some veriables. JS requires DELARATION: keyword 'ver'
+        var num1 = 10
+        var num2 = 27
+
+        var sum = num1 + num2
+
+        //console.log() -- used for development; NOT for a user. Only for us
+       console.log(sum)
+       console.log(sum, num1, num2)
+       console.log("The sum of ", num1, " + ", num2, " is ", sum)
+       console.log(`The sum of ${num1} + ${num2} is ${sum.toFixed(2)}`)
+
+       //USE FOR HOMEWORK
+       //Alert() allows for a pop-up in the broswer page to display data
+       //alert()-- Output to User [print()]
+       alert(`Hello World\nThe Sum is ${sum.toFixed(2)}`)
+       //must interact with above alert() first
+       console.log(`alert complete`)
+
+       //prompt() allows for a pop-up with a text box got data input by user
+       //prompt() -- Imput to User [input()]
+       var name = prompt(`Enter your name: `) //Must click "OKAY" Button to use this var
+
+       console.log(`prompt complete: ${name}`)
+       alert(`Hi there ${name}`) //Does not need to do this for week 6 homework
+       //-----------------------------------------------------------------
+
+       var hours = Number(prompt(`Enter your hours worked: `))
+        var gross = hours * 15
+        var taxA = gross * 0.2
+        var net = gross - taxA
+
+       var gross = hours * 15
+       console.log(`${hours.toFixed(1)} * 15 = $${gross.toFixed(2)}`)
+       alert(`${hours.toFixed(1)} * 15 = $${gross.toFixed(2)}`)
+
+       //CONITIONS
+
+       var num = Number(prompt(`Enter a Number: `))
+
+       if (num % 2 === 0)
+        {
+            alert(`The Number is EVEN!`)
+        }
+       else
+        {
+            alert(`The number is ODD!`)
+        }
+        
+        function hello()
+        {
+            alert(`Hello World`)
+        }
+
+    </script>
+</body>
+</html>
